@@ -1,11 +1,8 @@
 import React from 'react'
  import { Outlet, Link } from "react-router-dom";
 import  './Header.css';
-
-
+import img  from './anaya.png'
 const Header = () => {
-
- 
   const name="NIKITA";
   const myStyle = {
     color: "white",
@@ -34,10 +31,9 @@ const Header = () => {
         </ul>
       </nav>
       <Outlet/>
-
-
       <h3>{name}</h3>
       <p style={myStyle}>
+       <img src={img} alt="" />
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi explicabo facilis error nobis debitis, pariatur dolorem! Atque laborum facere debitis esse dolore eius vitae cumque vel consequuntur officia alias ipsum aut, inventore totam fugiat, asperiores natus reiciendis beatae eveniet! Eos voluptate facilis magnam, ipsum tenetur deleniti temporibus! Animi, eius enim, consectetur obcaecati aliquam distinctio vero commodi, asperiores voluptatem quae deleniti. Iste voluptas assumenda aliquam sint accusamus debitis nobis, obcaecati distinctio vitae natus eius voluptatibus, adipisci praesentium exercitationem repudiandae quia illum! Possimus quidem, praesentium reprehenderit laborum voluptatibus alias incidunt quia minima sit vero tenetur tempore magni provident voluptate ullam tempora!</p>
      
     </div>
